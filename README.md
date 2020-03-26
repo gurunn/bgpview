@@ -1,8 +1,26 @@
+[![GoDoc](https://godoc.org/github.com/gurunn/bgpview?status.svg)](http://godoc.org/github.com/gurunn/bgpview)
+
+BGPView client library 
+---------------------
+BGPView is a simple API allowing consumers to view all sort of analytics data about the current state and structure of the internet.
+Link to BGPView: 
+
+* [official site](https://bgpview.docs.apiary.io/)
+
+Usage example
+------------------------------------------------
+
+```sh
+go get -u github.com/gurunn/bgpview
+```
+
+Simple example using library in cmd/bgpview/main.go
+
+```go
 package main
 
 import (
 	"fmt"
-
 	"github.com/gurunn/bgpview"
 )
 
@@ -31,3 +49,4 @@ func main() {
 	fmt.Println(ix)
 	fmt.Println(search)
 }
+```
