@@ -1,4 +1,5 @@
 [![GoDoc](https://godoc.org/github.com/gurunn/bgpview?status.svg)](http://godoc.org/github.com/gurunn/bgpview)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gurunn/bgpview)](https://goreportcard.com/report/github.com/gurunn/bgpview)
 
 BGPView client library 
 ---------------------
