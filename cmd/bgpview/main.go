@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bgpview"
 	"fmt"
+	"github.com/gurunn/bgpview"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(asnPeers)
 	fmt.Println(asnUpstreams)
 	fmt.Println(asnDownstreams)
-	fmt.Println(asnIXs.Data)
+	fmt.Println(asnIXs)
 	fmt.Println(prefix)
 	fmt.Println(ip)
 	fmt.Println(ix)

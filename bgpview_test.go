@@ -1,7 +1,6 @@
 package bgpview
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -16,7 +15,6 @@ func TestGetASN(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asn)
 }
 
 func TestGetASNPrefixes(t *testing.T) {
@@ -30,7 +28,6 @@ func TestGetASNPrefixes(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asnPrefixes)
 }
 
 func TestGetASNPeers(t *testing.T) {
@@ -44,7 +41,6 @@ func TestGetASNPeers(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asnPeers)
 }
 
 func TestGetASNUpstreams(t *testing.T) {
@@ -58,7 +54,6 @@ func TestGetASNUpstreams(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asnUpstreams)
 }
 
 func TestGetASNDownstreams(t *testing.T) {
@@ -72,7 +67,6 @@ func TestGetASNDownstreams(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asnDownstreams)
 }
 
 func TestGetASNIXs(t *testing.T) {
@@ -86,7 +80,6 @@ func TestGetASNIXs(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(asnIXs)
 }
 
 func TestGetPrefix(t *testing.T) {
@@ -101,7 +94,6 @@ func TestGetPrefix(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(prefix)
 }
 
 func TestGetIP(t *testing.T) {
@@ -115,7 +107,6 @@ func TestGetIP(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(ip)
 }
 
 func TestGetIX(t *testing.T) {
@@ -129,7 +120,6 @@ func TestGetIX(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(ix)
 }
 
 func TestGetSearch(t *testing.T) {
@@ -143,5 +133,4 @@ func TestGetSearch(t *testing.T) {
 		t.Error("service return nil data")
 		return
 	}
-	fmt.Println(search)
 }

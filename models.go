@@ -19,18 +19,21 @@ type ASN struct {
 	Data DataASN `json:"data"`
 	Status
 }
+
 type RirAllocation struct {
 	RirName          string `json:"rir_name"`
 	CountryCode      string `json:"country_code"`
 	DateAllocated    string `json:"date_allocated"`
 	AllocationStatus string `json:"allocation_status"`
 }
+
 type IanaAssignment struct {
 	AssignmentStatus string      `json:"assignment_status"`
 	Description      string      `json:"description"`
 	WhoisServer      string      `json:"whois_server"`
 	DateAssigned     interface{} `json:"date_assigned"`
 }
+
 type DataASN struct {
 	Asn               int            `json:"asn"`
 	Name              string         `json:"name"`
@@ -54,6 +57,7 @@ type ASNPrefixes struct {
 	Data DataASNPrefixes `json:"data"`
 	Status
 }
+
 type Parent struct {
 	Prefix           string `json:"prefix"`
 	IP               string `json:"ip"`
@@ -61,6 +65,7 @@ type Parent struct {
 	RirName          string `json:"rir_name"`
 	AllocationStatus string `json:"allocation_status"`
 }
+
 type Ipv4Prefixes struct {
 	Prefix      string `json:"prefix"`
 	IP          string `json:"ip"`
@@ -71,6 +76,7 @@ type Ipv4Prefixes struct {
 	CountryCode string `json:"country_code"`
 	Parent      Parent `json:"parent"`
 }
+
 type Ipv6Prefixes struct {
 	Prefix      string `json:"prefix"`
 	IP          string `json:"ip"`
@@ -81,6 +87,7 @@ type Ipv6Prefixes struct {
 	CountryCode string `json:"country_code"`
 	Parent      Parent `json:"parent"`
 }
+
 type DataASNPrefixes struct {
 	Ipv4Prefixes []Ipv4Prefixes `json:"ipv4_prefixes"`
 	Ipv6Prefixes []Ipv6Prefixes `json:"ipv6_prefixes"`
@@ -91,18 +98,21 @@ type ASNPeers struct {
 	Data DataASNPeers `json:"data"`
 	Status
 }
+
 type Ipv4Peers struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type Ipv6Peers struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type DataASNPeers struct {
 	Ipv4Peers []Ipv4Peers `json:"ipv4_peers"`
 	Ipv6Peers []Ipv6Peers `json:"ipv6_peers"`
@@ -113,18 +123,21 @@ type ASNUpstreams struct {
 	Data DataASNUpstreams `json:"data"`
 	Status
 }
+
 type Ipv4Upstreams struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type Ipv6Upstreams struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type DataASNUpstreams struct {
 	Ipv4Upstreams []Ipv4Upstreams `json:"ipv4_upstreams"`
 	Ipv6Upstreams []Ipv6Upstreams `json:"ipv6_upstreams"`
@@ -138,12 +151,14 @@ type ASNDownstreams struct {
 	Data DataASNDownstreams `json:"data"`
 	Status
 }
+
 type Ipv4Downstreams struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type DataASNDownstreams struct {
 	Ipv4Downstreams []Ipv4Downstreams `json:"ipv4_downstreams"`
 	Ipv6Downstreams []interface{}     `json:"ipv6_downstreams"`
@@ -154,6 +169,7 @@ type ASNIXs struct {
 	Data []DataASNIXs `json:"data"`
 	Status
 }
+
 type DataASNIXs struct {
 	IxID        int    `json:"ix_id"`
 	Name        string `json:"name"`
@@ -170,12 +186,14 @@ type Prefix struct {
 	Data DataPrefix `json:"data"`
 	Status
 }
+
 type PrefixUpstreams struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type Asns struct {
 	Asn             int               `json:"asn"`
 	Name            string            `json:"name"`
@@ -183,11 +201,13 @@ type Asns struct {
 	CountryCode     string            `json:"country_code"`
 	PrefixUpstreams []PrefixUpstreams `json:"prefix_upstreams"`
 }
+
 type CountryCodes struct {
 	WhoisCountryCode         string `json:"whois_country_code"`
 	RirAllocationCountryCode string `json:"rir_allocation_country_code"`
 	MaxmindCountryCode       string `json:"maxmind_country_code"`
 }
+
 type RirAllocationPrefix struct {
 	RirName          string `json:"rir_name"`
 	CountryCode      string `json:"country_code"`
@@ -197,16 +217,19 @@ type RirAllocationPrefix struct {
 	DateAllocated    string `json:"date_allocated"`
 	AllocationStatus string `json:"allocation_status"`
 }
+
 type IanaAssignmentPrefix struct {
 	AssignmentStatus string      `json:"assignment_status"`
 	Description      string      `json:"description"`
 	WhoisServer      string      `json:"whois_server"`
 	DateAssigned     interface{} `json:"date_assigned"`
 }
+
 type Maxmind struct {
 	CountryCode string `json:"country_code"`
 	City        string `json:"city"`
 }
+
 type DataPrefix struct {
 	Prefix           string               `json:"prefix"`
 	IP               string               `json:"ip"`
@@ -231,12 +254,14 @@ type IP struct {
 	Data DataIP `json:"data"`
 	Status
 }
+
 type Asn struct {
 	Asn         int    `json:"asn"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type Prefixes struct {
 	Prefix      string `json:"prefix"`
 	IP          string `json:"ip"`
@@ -246,6 +271,7 @@ type Prefixes struct {
 	Description string `json:"description"`
 	CountryCode string `json:"country_code"`
 }
+
 type RirAllocationIP struct {
 	RirName          string `json:"rir_name"`
 	CountryCode      string `json:"country_code"`
@@ -255,16 +281,19 @@ type RirAllocationIP struct {
 	DateAllocated    string `json:"date_allocated"`
 	AllocationStatus string `json:"allocation_status"`
 }
+
 type IanaAssignmentIP struct {
 	AssignmentStatus string      `json:"assignment_status"`
 	Description      string      `json:"description"`
 	WhoisServer      string      `json:"whois_server"`
 	DateAssigned     interface{} `json:"date_assigned"`
 }
+
 type MaxmindIP struct {
 	CountryCode string      `json:"country_code"`
 	City        interface{} `json:"city"`
 }
+
 type DataIP struct {
 	IP             string           `json:"ip"`
 	PtrRecord      interface{}      `json:"ptr_record"`
@@ -279,6 +308,7 @@ type IX struct {
 	Data DataIX `json:"data"`
 	Status
 }
+
 type DataIX struct {
 	Name         string        `json:"name"`
 	NameFull     string        `json:"name_full"`
@@ -309,6 +339,7 @@ type AsnsSearch struct {
 	AbuseContacts []string `json:"abuse_contacts"`
 	RirName       string   `json:"rir_name"`
 }
+
 type Ipv4PrefixesSearch struct {
 	Prefix        string   `json:"prefix"`
 	IP            string   `json:"ip"`
